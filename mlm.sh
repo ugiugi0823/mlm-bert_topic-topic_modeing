@@ -9,26 +9,30 @@ pip install -q ./transformers
 cd ./transformers/examples/pytorch/language-modeling
 pip install -q -r requirements.txt
 # 데이터 다운로드
-gdown "14eNbudzbqbnPnmReWiJwZziYXUk01RJ4&confirm=t"
+gdown '1_0wExwA1F4c6QzOJX5BhDvJXhMIXFNN3&confirm=t'
 
 huggingface-cli login --token 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
 wandb login --relogin '2be184e31a96c722bfebdfe35f726042eb8e526c'
 
 
 cd ./transformers/examples/pytorch/language-modeling
-rm -rf inisw08-RoBERT-mlm-lion_32bit_test
+rm -rf inisw08-RoBERT-mlm-adamw_torch_test
 python run_mlm.py \
-    --output_dir ./inisw08-RoBERT-mlm-lion_32bit_test \
-    --model_name_or_path roberta-base \
-    --train_file="mlm_dataset_drop.csv" \
+    --output_dir ./inisw08-RoBERT-mlm-adamw_torch_test \
+    --model_name_or_path distilbert-base-uncased \
+    --train_file="6_15_db_preproc.csv" \
     --per_device_train_batch_size 8 \
     --per_device_eval_batch_size 8 \
     --validation_split_percentage="2" \
     --do_train \
+    --num_train_epochs 3 \
     --do_eval \
+    --per_device_train_batch_size 16 \
+    --per_device_eval_batch_size 16 \
     --line_by_line \
     --push_to_hub=True \
-    --optim='lion_32bit' \
+    --save_steps 10000 \
+    --optim='adamw_torch' \
     --report_to all \
     --hub_strategy 'every_save' \
-    --run_name='inisw08-RoBERT-mlm_조현욱_lion_32bit_test'
+    --run_name='inisw08-RoBERT-mlm_0615_조현욱_adamw_torch_test'
