@@ -36,4 +36,4 @@ python run_mlm.py \
     --optim='adamw_torch' \
     --report_to all \
     --hub_strategy 'every_save' \
-    --run_name='inisw08-RoBERT-mlm_0615_조현욱_adamw_torch_test'
+    --run_name='inisw08-RoBERT-mlm_0615_조현욱_adamw_torch_bs-16'
