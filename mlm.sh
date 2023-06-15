@@ -31,6 +31,7 @@ python run_mlm.py \
     --per_device_eval_batch_size 16 \
     --line_by_line \
     --push_to_hub=True \
+    --logging_steps="500" \
     --save_steps 10000 \
     --optim='adamw_torch' \
     --report_to all \
