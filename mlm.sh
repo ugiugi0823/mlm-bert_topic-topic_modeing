@@ -19,7 +19,7 @@ cd ./transformers/examples/pytorch/language-modeling
 rm -rf inisw08-RoBERT-mlm-lion_32bit_test
 python run_mlm.py \
     --output_dir ./inisw08-RoBERT-mlm-lion_32bit_test \
-    --model_name_or_path distilbert-base-uncased \
+    --model_name_or_path roberta-base \
     --train_file="mlm_dataset_drop.csv" \
     --per_device_train_batch_size 8 \
     --per_device_eval_batch_size 8 \
