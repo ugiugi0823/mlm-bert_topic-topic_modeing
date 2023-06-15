@@ -19,7 +19,7 @@ cd ./transformers/examples/pytorch/language-modeling
 rm -rf inisw08-RoBERT-mlm-adamw_torch_test
 python run_mlm.py \
     --output_dir ./inisw08-RoBERT-mlm-adamw_torch_test \
-    --model_name_or_path distilbert-base-uncased \
+    --model_name_or_path roberta-base \
     --train_file="6_15_db_preproc.csv" \
     --per_device_train_batch_size 8 \
     --per_device_eval_batch_size 8 \
