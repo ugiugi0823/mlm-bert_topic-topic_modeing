@@ -15,8 +15,8 @@ huggingface-cli login --token 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
 wandb login --relogin '2be184e31a96c722bfebdfe35f726042eb8e526c'
 
 
-
-rm -rf inisw08-RoBERT-mlm-adamw_torch_test
+cd ./transformers/examples/flax/language-modeling
+rm -r inisw08-T5-mlm-adafactor_test
 python run_t5_mlm_flax.py \
 	--output_dir="inisw08-T5-mlm-adafactor_test" \
 	--model_type="t5" \
@@ -38,7 +38,6 @@ python run_t5_mlm_flax.py \
 	--save_steps="10000" \
 	--eval_steps="2500" \
 	--num_train_epochs=100.0 \
-	--report_to all \
 	--use_auth_token=True \
-	--push_to_hub=True \
-	--run_name='inisw08-T5-mlm-adafactor_test'
+	--push_to_hub=True 
+	
