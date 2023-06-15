@@ -6,7 +6,7 @@ pip install evaluate
 pip install bitsandbytes
 git clone https://github.com/huggingface/transformers.git
 pip install -q ./transformers
-cd ./transformers/examples/pytorch/language-modeling
+cd ./transformers/examples/flax/language-modeling
 pip install -q -r requirements.txt
 # 데이터 다운로드
 gdown '1_0wExwA1F4c6QzOJX5BhDvJXhMIXFNN3&confirm=t'
@@ -15,7 +15,7 @@ huggingface-cli login --token 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
 wandb login --relogin '2be184e31a96c722bfebdfe35f726042eb8e526c'
 
 
-cd ./transformers/examples/flax/language-modeling
+
 rm -rf inisw08-RoBERT-mlm-adamw_torch_test
 python run_t5_mlm_flax.py \
 	--output_dir="inisw08-T5-mlm-adafactor_test" \
