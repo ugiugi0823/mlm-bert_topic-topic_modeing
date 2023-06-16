@@ -16,13 +16,13 @@ wandb login --relogin '2be184e31a96c722bfebdfe35f726042eb8e526c'
 
 
 cd ./transformers/examples/pytorch/language-modeling
-rm -rf inisw08-RoBERT-mlm-adamw_torch_test
+rm -r inisw08-RoBERT-mlm-adamw_torch_bs32
 python run_mlm.py \
-    --output_dir ./inisw08-RoBERT-mlm-adamw_torch_bs16 \
+    --output_dir ./inisw08-RoBERT-mlm-adamw_torch_bs32 \
     --model_name_or_path roberta-base \
     --train_file="6_15_db_preproc.csv" \
-    --per_device_train_batch_size 16 \
-    --per_device_eval_batch_size 16 \
+    --per_device_train_batch_size 32 \
+    --per_device_eval_batch_size 32 \
     --validation_split_percentage="2" \
     --do_train \
     --num_train_epochs 3 \
@@ -34,4 +34,4 @@ python run_mlm.py \
     --optim='adamw_torch' \
     --report_to all \
     --hub_strategy 'every_save' \
-    --run_name='inisw08-RoBERT-mlm_0615_조현욱_adamw_torch_bs16'
+    --run_name='inisw08-RoBERT-mlm_0615_조현욱_adamw_torch_bs32'
