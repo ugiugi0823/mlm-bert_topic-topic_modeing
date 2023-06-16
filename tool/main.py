@@ -1,6 +1,6 @@
 import argparse
-from utils import setup
-from get_pytorch_bin import get_pytorch_bin
+from tool.utils import setup
+from tool.get_pytorch_bin import get_pytorch_bin
 
 
 if __name__ == '__main__':
