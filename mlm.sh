@@ -21,14 +21,12 @@ python run_mlm.py \
     --output_dir ./inisw08-RoBERT-mlm-adamw_torch_bs16 \
     --model_name_or_path roberta-base \
     --train_file="6_15_db_preproc.csv" \
-    --per_device_train_batch_size 8 \
-    --per_device_eval_batch_size 8 \
+    --per_device_train_batch_size 16 \
+    --per_device_eval_batch_size 16 \
     --validation_split_percentage="2" \
     --do_train \
     --num_train_epochs 3 \
     --do_eval \
-    --per_device_train_batch_size 16 \
-    --per_device_eval_batch_size 16 \
     --line_by_line \
     --push_to_hub=True \
     --logging_steps 500 \
