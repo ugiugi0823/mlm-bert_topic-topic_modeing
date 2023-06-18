@@ -1,5 +1,4 @@
 # mlm-modeling
-![image](https://github.com/ugiugi0823/mlm-modeing/assets/106899647/f49aba5e-32d1-419f-9db7-080b8a7d779b)
 
 
 
