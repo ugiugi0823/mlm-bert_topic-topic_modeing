@@ -12,7 +12,7 @@ pip install -q -r requirements.txt
 gdown '1_0wExwA1F4c6QzOJX5BhDvJXhMIXFNN3&confirm=t'
 
 huggingface-cli login --token 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
-wandb login --relogin '2be184e31a96c722bfebdfe35f726042eb8e526c'
+wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
 
 
 cd ./transformers/examples/pytorch/language-modeling
