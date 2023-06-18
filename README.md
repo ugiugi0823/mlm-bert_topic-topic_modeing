@@ -11,7 +11,8 @@
 
 
 ## RoBERTa
-![image](https://github.com/ugiugi0823/mlm-modeing/assets/106899647/526b700e-b0ad-4ce5-8bd0-b4a5437cbc30)
+![Roberta (1)](https://github.com/ugiugi0823/mlm-modeing/assets/106899647/72f03cfb-baa3-4475-b648-dd24651ce366)
+
 
 
 
