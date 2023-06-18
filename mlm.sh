@@ -21,7 +21,7 @@ wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
 cd ./transformers/examples/pytorch/language-modeling
 rm -r inisw08-RoBERT-mlm-adamw_torch_bs8
 python run_mlm.py \
-    --output_dir ./inisw08-RoBERT-mlm-adamw_torch_bs8 \
+    --output_dir ./inisw08-RoBERT-mlm-adamw_torch_bs8_test \
     --model_name_or_path roberta-base \
     --train_file="6_15_db_preproc.csv" \
     --per_device_train_batch_size 8 \
