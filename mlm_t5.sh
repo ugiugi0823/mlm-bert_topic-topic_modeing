@@ -13,7 +13,7 @@ gdown '1_0wExwA1F4c6QzOJX5BhDvJXhMIXFNN3&confirm=t'
 
 
 
-# 💙 huggingface, wandb 토큰을 무조건 넣어주셔야 돌아가요!!!
+# 🔥🔥 huggingface, wandb 토큰을 무조건 넣어주셔야 돌아가요!!! 🔥🔥
 
 huggingface-cli login --token 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
 wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
