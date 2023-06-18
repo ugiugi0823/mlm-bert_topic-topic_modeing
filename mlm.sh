@@ -11,6 +11,8 @@ pip install -q -r requirements.txt
 # 데이터 다운로드
 gdown '1_0wExwA1F4c6QzOJX5BhDvJXhMIXFNN3&confirm=t'
 
+
+
 huggingface-cli login --token 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
 wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
 
