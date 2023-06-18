@@ -24,6 +24,11 @@ t5 mlm 모델 돌려보기!
 ```
 
 
+msgpack 을 bin 파일로!!
+```
+!bash get_bin.sh
+```
+
 ---
 
 
