@@ -22,7 +22,7 @@ wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
 cd ./transformers/examples/flax/language-modeling
 rm -r inisw08-T5-mlm-adafactor_test
 python run_t5_mlm_flax.py \
-	--output_dir="inisw08-T5-mlm-adafactor_test_fsdf" \
+	--output_dir="inisw08-T5-mlm-adafactor_test1" \
 	--model_type="t5" \
 	--do_train=True \
 	--do_eval=True \
